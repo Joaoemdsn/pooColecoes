@@ -6,7 +6,7 @@ public class Matricula {
     
      public Matricula(String codigoDisciplina, double nota) {
         this.codigoDisciplina = codigoDisciplina;
-        if (nota < 0 && nota > 10) {
+        if (nota < 0 || nota > 10) {
             System.out.println("Nota deve estar entre 0 e 10");
         }
         this.nota = nota;
