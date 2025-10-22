@@ -64,12 +64,12 @@ public class CadastroDisciplinas {
             if (disciplinas.isEmpty()) {
                 System.out.println("Nenhuma disciplina cadastrada");
             } else {
-                int contador = 1
+                int contador = 1;
                 for (Disciplina d : disciplinas) {
                     System.out.println(contador + ". " + d);
-                    contador++
+                    contador++;
                 }
             }
-            System.out.println("Total: " + disciplinas.size() + "disciplinas\n");
+            System.out.println("Total: " + disciplinas.size() + " disciplinas\n");
     }
 }

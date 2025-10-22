@@ -52,6 +52,16 @@ public class ListaEstudantes{
         return new ArrayList<>(estudantes);
     }
 
+    public List<Estudantes> buscarEstudantesPorNome(String substring) {
+        List<Estudantes> resultados = new ArrayList<>();
+        for (Estudantes e : estudantes) {
+            if (e.getNome().toLowerCase().contains(substring.toLowerCase())) {
+                resultados.add(e);
+            }
+        }
+        return resultados;
+    }
+
     public void exibirTodos() {
         System.out.println("\n=== LISTA DE ESTUDANTES ===");
         if (estudantes.isEmpty()) {

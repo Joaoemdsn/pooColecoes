@@ -20,5 +20,8 @@ public class Estudantes {
         this.nome = nome;
     }
 
-    
+    @Override
+    public String toString() {
+        return "ID: " + id + " - Nome: " + nome;
+    }
 }
